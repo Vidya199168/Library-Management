@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>📚 Library Management</h1>
+
+    <!-- Add Book -->
+    <input type="text" id="title" placeholder="Book Title" />
+    <input type="text" id="author" placeholder="Author" />
+    <button onclick="addBook()">Add Book</button>
+
+    <!-- Search -->
+    <input type="text" id="search books" placeholder="Search books..." onkeyup="searchBooks()" />
+
+    <!-- Stats -->
+    <p id="count"></p>
+
+    <!-- Book List -->
+    <ul id="bookList"></ul>
+
+    <!-- Clear -->
+    <button class="clear-btn" onclick="clearBooks()">Clear All</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
